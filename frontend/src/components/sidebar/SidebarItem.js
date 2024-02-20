@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
-const activeLink = ({ isActive }) => (isActive ? "active" : "link");
-const activeSubLink = ({ isActive }) => (isActive ? "active" : "link")
+const activeLink = ({ isActive }) => (isActive ? "active  text-decoration-none text-white bg-black" : "link  text-decoration-none  text-black bg-white");
+const activeSubLink = ({ isActive }) => (isActive ? "active  text-decoration-none  text-white bg-black" : "link  text-decoration-none  text-black bg-white")
 
 const SidebarItem = ({ item, isOpen }) => {
     const [expandMenu, setExpandMenu] = useState(false);
@@ -11,7 +11,7 @@ const SidebarItem = ({ item, isOpen }) => {
     if (item.childrens) {
         return (
             <div className={expandMenu ? "sidebar-item s-parent open" : "sidebar-item s-parent"}>
-                <div className="sidebar-title">
+                <div className="sidebar-title  text-decoration-none">
                     <span>
                         {item.icon && <div className="icon">{item.icon}</div>}
                         {isOpen && <div>{item.title}</div>}
@@ -44,7 +44,7 @@ const SidebarItem = ({ item, isOpen }) => {
             <NavLink to={item.path} className={activeLink}>
                 <div className="sidebar-item s-parent">
                     <div className="sidebar-title">
-                        <span>
+                        <span className="">
                             {item.icon && <div className="icon">{item.icon}</div>}
                             {isOpen && <div>{item.title}</div>}
                         </span>

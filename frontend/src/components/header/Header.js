@@ -17,11 +17,11 @@ const Header = () => {
     }
 
     return (
-        <div className='header p-2'>
+        <div className='header p-2 m-1'>
             <div className='d-flex justify-content-between'>
                 <h3>
-                    <span className=' text-black-50'>Welcome,</span>
-                    <span className=' text-danger'> {name} </span>
+                    <span className=' text-black-50'>Welcome</span>
+                    <span className=' text-teal-700	'> {name} 😊</span>
                 </h3>
                 <button onClick={logOut} className='btn btn-danger'>Logout</button>
             </div>

@@ -29,7 +29,7 @@ const Sidebar = ({ children }) => {
                     return <SidebarItem key={value} item={item} isOpen={isOpen} />
                 })}
             </div>
-            <main style={{ paddingLeft: isOpen ? "230px" : "62px", transition: "all 0.5s" }} className='w-100 bg-body-secondary'> {children} </main>
+            <main style={{ paddingLeft: isOpen ? "230px" : "62px", transition: "all 0.5s" }} className='w-100 bg-body-secondary no-underline'> {children} </main>
         </div>
     );
 }
