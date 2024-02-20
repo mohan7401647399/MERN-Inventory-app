@@ -8,7 +8,7 @@ const initialState = {
 
 //  Create product
 export const createProduct = createAsyncThunk(
-    "product/create",
+    "products/create",
     async (formData, thunAPI) => {
         try {
             return await productService.createNewProduct(formData)
@@ -22,7 +22,7 @@ export const createProduct = createAsyncThunk(
 
 //  get All product
 export const getProducts = createAsyncThunk(
-    "product/getProducts",
+    "products/getProducts",
     async (_, thunAPI) => {
         try {
             return await productService.getProducts()
@@ -36,7 +36,7 @@ export const getProducts = createAsyncThunk(
 
 //  Delete product
 export const deleteProduct = createAsyncThunk(
-    "product/delete",
+    "products/delete",
     async (id, thunAPI) => {
         try {
             return await productService.deleteProduct(id)
@@ -50,7 +50,7 @@ export const deleteProduct = createAsyncThunk(
 
 //  get a single product
 export const getProduct = createAsyncThunk(
-    "product/getProduct",
+    "products/getProduct",
     async (id, thunAPI) => {
         try {
             return await productService.getProduct(id)
@@ -64,7 +64,7 @@ export const getProduct = createAsyncThunk(
 
 //  update product
 export const updateProduct = createAsyncThunk(
-    "product/updateProduct",
+    "products/updateProduct",
     async ({ id, formData }, thunAPI) => {
         try {
             return await productService.updateProduct(id, formData)
