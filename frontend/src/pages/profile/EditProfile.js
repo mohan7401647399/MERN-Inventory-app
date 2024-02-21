@@ -82,7 +82,7 @@ const EditProfile = () => {
   };
 
   return (
-    <div className="profile p-2 d-flex justify-content-between align-content-center">
+    <div className="profile p-2 bg-dark">
       {isLoading && <Loader />}
       <Card>
         <h2>Edit Profile</h2>
@@ -122,7 +122,7 @@ const EditProfile = () => {
                 name="bio"
                 value={profile?.bio}
                 onChange={handleInputChange}
-                cols="40"
+                cols="20"
                 rows="5"
               ></textarea>
             </p>

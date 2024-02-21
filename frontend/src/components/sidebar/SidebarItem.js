@@ -44,7 +44,7 @@ const SidebarItem = ({ item, isOpen }) => {
             <NavLink to={item.path} className={activeLink}>
                 <div className="sidebar-item s-parent">
                     <div className="sidebar-title">
-                        <span className="">
+                        <span>
                             {item.icon && <div className="icon">{item.icon}</div>}
                             {isOpen && <div>{item.title}</div>}
                         </span>

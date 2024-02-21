@@ -31,14 +31,14 @@ const Profile = () => {
   }, [dispatch]);
 
   return (
-    <div className="profile h-30">
+    <div className="profile h-30 bg-dark">
       {isLoading && <SpinnerImg />}
       <>
         {!isLoading && profile === null ? (
           <p>Something went wrong, please reload the page...</p>
         ) : (
           <Card>
-            <span className="w-100 h-100 overflow-hidden max-h-80	pt-4 rounded-sm	ease-in duration-300">
+            <span className="w-100 h-100 d-flex justify-center align-content-center overflow-hidden max-h-80	pt-4 rounded-sm	ease-in duration-300">
               <img src={profile?.photo} alt="profilePic" />
             </span>
             <span className="m-auto p-5">
