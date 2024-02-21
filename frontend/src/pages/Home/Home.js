@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import { RiProductHuntLine } from "react-icons/ri";
+import { BsRCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { ShowOnLogin, ShowOnLogout } from "../../components/protect/HiddenLinks";
 import Image from "../../assets/inv-img.png";
@@ -10,7 +10,7 @@ const Home = () => {
         <div className="home bg-[#030b6b] min-h-screen">
             <nav className="container d-flex justify-content-between pt-6 pb-6 text-white">
                 <div className="logo text-white">
-                    <RiProductHuntLine size={35} />
+                    <BsRCircle size={35} />
                 </div>
                 <ul className="home-links d-flex justify-content-between list-unstyled">
                     <ShowOnLogout>
@@ -34,7 +34,7 @@ const Home = () => {
                     </ShowOnLogin>
                 </ul>
             </nav>
-            <section className="container d-flex justify-content-center align-items-center">
+            <section className="container d-flex justify-content-center align-items-center p-3 m-auto">
                 <div className='w-50 text-white mg-2'>
                     <h2 className='d-block'>Inventory {"&"} Management System</h2>
                     <p>
@@ -52,7 +52,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='object-fill	mb-5'>
+                <div className='object-fill w-full	m-auto'>
                     <img src={Image} alt="inventory_image" />
                 </div>
             </section>

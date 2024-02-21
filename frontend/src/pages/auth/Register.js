@@ -66,33 +66,33 @@ const Register = () => {
                         <label htmlFor="email" className='mb-2'>
                             <strong>Name</strong>
                         </label>
-                        <input required type="text" placeholder='Enter name' autoComplete='off' name='name' className='form-control rounded-0' value={name}
+                        <input required type="text" placeholder='Enter name' autoComplete='off' name='name' className='form-control rounded-2 p-1 m-auto' value={name}
                             onChange={handleChange} />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="email" className="mb-2">
                             <strong>Email</strong>
                         </label>
-                        <input required type="email" placeholder='Enter Email' autoComplete='off' name='email' className='form-control rounded-0' value={email}
+                        <input required type="email" placeholder='Enter Email' autoComplete='off' name='email' className='form-control rounded-2 p-1 m-auto' value={email}
                             onChange={handleChange} />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="email" className=' mb-2'>
                             <strong>Password</strong>
                         </label>
-                        <input required type="password" placeholder='Enter password' name='password' className='form-control rounded-0 mb-2' value={password}
+                        <input required type="password" placeholder='Enter password' name='password' className='form-control rounded-2 mb-2 p-1 m-auto' value={password}
                             onChange={handleChange} />
-                        <input required type="password" placeholder='Confirm password' name='password2' className='form-control rounded-0' value={password2}
+                        <input required type="password" placeholder='Confirm password' name='password2' className='form-control rounded-2 p-1 m-auto' value={password2}
                             onChange={handleChange} />
                     </div>
-                    <button type='submit' className='btn btn-success w-100 rounded-0'>
+                    <button type='submit' className='btn btn-success w-100 rounded-2'>
                         Register
                     </button>
                 </form>
-                <div className='d-flex justify-content-between'>
-                    <Link to="/" className=' text-decoration-none'>Home</Link>
-                    <p>Already have an account?</p>
-                    <Link to="/login" className='btn btn-default bg-light rounded-0 text-decoration-none'>Login</Link>
+                <div className='d-flex justify-content-between align-content-center p-2'>
+                    <Link to="/" className='btn btn-primary text-decoration-none m-1 p-1'>Home</Link>
+                    <p className='m-2'>Already have an account?</p>
+                    <Link to="/login" className='btn btn-primary text-decoration-none m-1 p-1'>Login</Link>
                 </div>
             </Card>
         </>

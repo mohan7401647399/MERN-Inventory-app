@@ -60,25 +60,25 @@ const Login = () => {
                         <label htmlFor="email">
                             <strong>Email</strong>
                         </label>
-                        <input required type="email" placeholder='Enter Email' autoComplete='off' name='email' className='form-control rounded-0' value={email}
+                        <input required type="email" placeholder='Enter Email' autoComplete='off' name='email' className='form-control rounded-2 p-1 m-auto' value={email}
                             onChange={handleChange} />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="email">
                             <strong>Password</strong>
                         </label>
-                        <input required type="password" placeholder='Enter password' name='password' className='form-control rounded-0' value={password}
+                        <input required type="password" placeholder='Enter password' name='password' className='form-control rounded-2 p-1 m-auto' value={password}
                             onChange={handleChange} />
                     </div>
-                    <button type='submit' className='btn btn-success w-100 rounded-0'>
+                    <button type='submit' className='btn btn-success w-100 rounded-2'>
                         Login
                     </button>
                 </form>
                 <Link to="/forgot" className=' text-decoration-none'>Forgot Password</Link>
-                <span className='d-flex justify-content-between'>
-                    <Link to="/" className=' text-decoration-none'>Home</Link>
-                    <p> &nbsp; Don't have an account &nbsp;</p>
-                    <Link to="/register" className='btn btn-default bg-light rounded-0 text-decoration-none'>Signup</Link>
+                <span className='d-flex justify-content-between align-content-center p-2'>
+                    <Link to="/" className='btn btn-primary text-decoration-none m-1 p-1'>Home</Link>
+                    <p className='m-2'> &nbsp; Don't have an account &nbsp;</p>
+                    <Link to="/register" className='btn btn-primary text-decoration-none m-1 p-1'>Signup</Link>
                 </span>
             </Card>
         </>

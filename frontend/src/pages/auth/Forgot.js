@@ -40,12 +40,12 @@ const Forgot = () => {
                                 placeholder="Enter Email"
                                 autoComplete="off"
                                 name="email"
-                                className="form-control rounded-0"
+                                className="form-control rounded-2 p-1 m-auto"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
-                        <button type="submit" className="btn btn-success w-100 rounded-0">
+                        <button type="submit" className="btn btn-success w-100 rounded-2">
                             Get Reset Email
                         </button>
                         <div className='d-flex justify-content-between mt-1'>

@@ -1,5 +1,3 @@
-//mohan LDrdk6P7TBUQ2z7F
-
 const dotenv = require("dotenv").config(),
     express = require("express"),
     mongoose = require("mongoose"),

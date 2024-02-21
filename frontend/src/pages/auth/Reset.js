@@ -56,7 +56,7 @@ const Reset = () => {
                                 name="password"
                                 value={password}
                                 onChange={handleChange}
-                                className="form-control rounded-0 mt-2"
+                                className="form-control rounded-2 mt-2 p-1 m-auto"
                             />
                             <br />
                             <input
@@ -67,10 +67,10 @@ const Reset = () => {
                                 name="password2"
                                 value={password2}
                                 onChange={handleChange}
-                                className="form-control rounded-0"
+                                className="form-control rounded-2 p-1 m-auto"
                             />
                         </div>
-                        <button type="submit" className="btn btn-success w-100 rounded-0">
+                        <button type="submit" className="btn btn-success w-100 rounded-2">
                             Update
                         </button>
                         <div className='d-flex justify-content-between mt-1'>
