@@ -38,6 +38,7 @@ const Contact = () => {
               required
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
+              className='form-control rounded-2 p-1 m-auto mt-2'
             />
             <label>Message</label>
             <textarea

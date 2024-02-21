@@ -18,6 +18,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                             type="file"
                             name="image"
                             onChange={(e) => handleImageChange(e)}
+                            className='form-control rounded-2 p-1 m-auto mt-2'
                         />
 
                         {imagePreview != null ? (
@@ -36,6 +37,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                         name="name"
                         value={product?.name}
                         onChange={handleChange}
+                        className='form-control rounded-2 p-1 m-auto mt-2'
                     />
 
                     <label>Product Category:</label>
@@ -46,6 +48,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                         name="category"
                         value={product?.category}
                         onChange={handleChange}
+                        className='form-control rounded-2 p-1 m-auto mt-2'
                     />
 
                     <label>Product Price:</label>
@@ -56,6 +59,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                         name="price"
                         value={product?.price}
                         onChange={handleChange}
+                        className='form-control rounded-2 p-1 m-auto mt-2'
                     />
 
                     <label>Product Quantity:</label>
@@ -66,6 +70,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                         name="quantity"
                         value={product?.quantity}
                         onChange={handleChange}
+                        className='form-control rounded-2 p-1 m-auto mt-2'
                     />
 
                     <label>Product Description:</label>

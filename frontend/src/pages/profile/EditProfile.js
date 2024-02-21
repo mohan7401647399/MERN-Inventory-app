@@ -113,6 +113,7 @@ const EditProfile = () => {
                 name="phone"
                 value={profile?.phone}
                 onChange={handleInputChange}
+                className='form-control rounded-2 p-1 m-auto mt-2'
               />
             </p>
             <p>
@@ -127,7 +128,7 @@ const EditProfile = () => {
             </p>
             <p>
               <label>Photo:&nbsp;</label>
-              <input type="file" name="image" onChange={handleImageChange} />
+              <input type="file" name="image" onChange={handleImageChange} className='form-control rounded-2 p-1 m-auto mt-2' />
             </p>
             <div>
               <button className="btn btn-primary">Edit Profile</button>

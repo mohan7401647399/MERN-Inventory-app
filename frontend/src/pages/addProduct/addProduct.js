@@ -51,7 +51,7 @@ const AddProduct = () => {
     };
 
     return (
-        <div>
+        <div className="p-1 m-auto">
             {isLoading && <Loader />}
             <h3 className="mt-1">Add New Product</h3>
             <ProductForm

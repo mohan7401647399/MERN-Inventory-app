@@ -19,12 +19,16 @@
     display: block;
     font-size: 1.6rem;
     font-weight: 300;
-    padding: 0.5rem;
+    padding: 5px;
     padding-left: 3rem;
-    margin: 1rem auto;
+    margin: 10px auto;
     width: 100%;
     border: 1px solid #777;
-    border-radius: 3px;
     outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
   }
 }

@@ -70,21 +70,21 @@ const ProductList = ({ products, isLoading }) => {
     };
 
     return (
-        <div className=''>
+        <div>
             <hr />
-            <div className="p-1 w-100 overflow-x-auto">
+            <div className="p-1 w-100 overflow-x-auto m-auto">
                 <div className='d-flex p-1 m-auto align-items-center justify-content-between'>
                     <span>
-                        <h3>Inventory Items</h3>
+                        <h3 className=' text-purple-900'>Inventory Items</h3>
                     </span>
                     <span>
                         <Search value={search} onChange={(e) => setSearch(e.target.value)} />
                     </span>
                 </div>
                 {isLoading && <SpinnerImg />}
-                <div className="w-100 text-2xl border-collapse">
-                    {isLoading && products.length === 0 ? (
-                        <p>No Products found, Please add a new products here.</p>
+                <div className="w-100 text-2xl border-collapse p-1 m-auto">
+                    {products.length === 0 ? (
+                        <p className=' text-warning w-fit rounded-2 p-2 m-auto bg-black'>No Products found, Please add a new products here.</p>
                     ) : (
                         <table className='table table-bordered table-responsive table-hover'>
                             <thead className='border-4 border-t-blue-500 border-b-blue-500  solid'>
