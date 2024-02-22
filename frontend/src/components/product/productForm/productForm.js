@@ -83,7 +83,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                     />
 
                     <div className="m-2">
-                        <button onClick={saveProduct} type="submit" className="btn btn-primary">
+                        <button onClick={saveProduct} type="submit" className="btn btn-primary hover:font-bold">
                             Save Product
                         </button>
                     </div>

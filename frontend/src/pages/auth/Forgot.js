@@ -45,7 +45,7 @@ const Forgot = () => {
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
-                        <button type="submit" className="btn btn-success w-100 rounded-2">
+                        <button type="submit" className="btn btn-success w-100 rounded-2 hover:font-bold">
                             Get Reset Email
                         </button>
                         <div className='d-flex justify-content-between mt-1'>

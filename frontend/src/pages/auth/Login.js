@@ -70,15 +70,15 @@ const Login = () => {
                         <input required type="password" placeholder='Enter password' name='password' className='form-control rounded-2 p-1 m-auto' value={password}
                             onChange={handleChange} />
                     </div>
-                    <button type='submit' className='btn btn-success w-100 rounded-2'>
+                    <button type='submit' className='btn btn-success w-100 rounded-2  hover:font-bold'>
                         Login
                     </button>
                 </form>
                 <Link to="/forgot" className=' text-decoration-none'>Forgot Password</Link>
                 <span className='d-flex justify-content-between align-content-center p-2'>
-                    <Link to="/" className='btn btn-primary text-decoration-none m-1 p-1'>Home</Link>
+                    <Link to="/" className='btn btn-primary text-decoration-none m-1 p-1  hover:font-bold'>Home</Link>
                     <p className='m-2'> &nbsp; Don't have an account &nbsp;</p>
-                    <Link to="/register" className='btn btn-primary text-decoration-none m-1 p-1'>Signup</Link>
+                    <Link to="/register" className='btn btn-primary text-decoration-none m-1 p-1  hover:font-bold'>Signup</Link>
                 </span>
             </Card>
         </>

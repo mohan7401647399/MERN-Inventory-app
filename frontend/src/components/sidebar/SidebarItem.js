@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
-const activeLink = ({ isActive }) => (isActive ? "active  text-decoration-none text-white bg-black" : "link  text-decoration-none  text-black bg-white");
-const activeSubLink = ({ isActive }) => (isActive ? "active  text-decoration-none  text-white bg-black" : "link  text-decoration-none  text-black bg-white")
+const activeLink = ({ isActive }) => (isActive ? "active  text-decoration-none text-white bg-black" : "link  text-decoration-none text-black bg-white");
+const activeSubLink = ({ isActive }) => (isActive ? "active  text-decoration-none text-white bg-black" : "link  text-decoration-none text-black bg-white")
 
 const SidebarItem = ({ item, isOpen }) => {
     const [expandMenu, setExpandMenu] = useState(false);

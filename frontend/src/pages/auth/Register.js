@@ -85,14 +85,14 @@ const Register = () => {
                         <input required type="password" placeholder='Confirm password' name='password2' className='form-control rounded-2 p-1 m-auto' value={password2}
                             onChange={handleChange} />
                     </div>
-                    <button type='submit' className='btn btn-success w-100 rounded-2'>
+                    <button type='submit' className='btn btn-success w-100 rounded-2  hover:font-bold'>
                         Register
                     </button>
                 </form>
                 <div className='d-flex justify-content-between align-content-center p-2'>
-                    <Link to="/" className='btn btn-primary text-decoration-none m-1 p-1'>Home</Link>
+                    <Link to="/" className='btn btn-primary text-decoration-none m-1 p-1  hover:font-bold'>Home</Link>
                     <p className='m-2'>Already have an account?</p>
-                    <Link to="/login" className='btn btn-primary text-decoration-none m-1 p-1'>Login</Link>
+                    <Link to="/login" className='btn btn-primary text-decoration-none m-1 p-1  hover:font-bold'>Login</Link>
                 </div>
             </Card>
         </>

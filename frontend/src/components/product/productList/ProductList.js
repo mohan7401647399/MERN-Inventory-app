@@ -75,7 +75,7 @@ const ProductList = ({ products, isLoading }) => {
             <div className="p-1 w-100 overflow-x-auto m-auto">
                 <div className='d-flex p-1 m-auto align-items-center justify-content-between'>
                     <span>
-                        <h3 className=' text-purple-900'>Inventory Items</h3>
+                        <h2 className=' text-purple-900 p-1 m-auto font-bold hover:font-extrabold'>Inventory Items</h2>
                     </span>
                     <span>
                         <Search value={search} onChange={(e) => setSearch(e.target.value)} />

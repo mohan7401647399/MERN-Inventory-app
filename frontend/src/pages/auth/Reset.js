@@ -70,7 +70,7 @@ const Reset = () => {
                                 className="form-control rounded-2 p-1 m-auto"
                             />
                         </div>
-                        <button type="submit" className="btn btn-success w-100 rounded-2">
+                        <button type="submit" className="btn btn-success w-100 rounded-2  hover:font-bold">
                             Update
                         </button>
                         <div className='d-flex justify-content-between mt-1'>

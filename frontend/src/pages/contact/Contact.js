@@ -26,7 +26,9 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h3 className="m-auto">Contact Us</h3>
+      <hr />
+      <h3 className="m-auto font-serif font-extrabold text-center">Contact Us</h3>
+      <hr />
       <div className="section">
         <form onSubmit={sendEmail}>
           <Card cardClass="card">
@@ -49,7 +51,7 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <button className="btn btn-primary">Send Message</button>
+            <button className="btn btn-primary  hover:font-bold">Send Message</button>
           </Card>
         </form>
 

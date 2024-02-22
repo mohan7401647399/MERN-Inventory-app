@@ -33,7 +33,7 @@ const ChangePassword = () => {
   return (
     <div className="change-password w-100">
       <Card >
-        <h3 className="">Change Password</h3>
+        <h3 className=" hover:font-black">Change Password</h3>
         <form onSubmit={changePass} className="form-control">
           <input
             type="password"
@@ -59,7 +59,7 @@ const ChangePassword = () => {
             value={password2}
             onChange={handleInputChange}
           />
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary hover:font-bold">
             Change Password
           </button>
         </form>

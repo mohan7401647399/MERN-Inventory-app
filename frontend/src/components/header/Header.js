@@ -20,10 +20,10 @@ const Header = () => {
         <div className='header p-2 m-1'>
             <div className='d-flex justify-content-between'>
                 <h3>
-                    <span className=' text-black-50'>Welcome</span>
-                    <span className=' text-teal-700	'> {name} 😊</span>
+                    <span className=' text-black-50 font-semibold hover:font-bold'>Welcome</span>
+                    <span className=' text-teal-700	hover:font-bold'> {name} 😊</span>
                 </h3>
-                <button onClick={logOut} className='btn btn-danger'>Logout</button>
+                <button onClick={logOut} className='btn btn-danger hover:font-bold'>Logout</button>
             </div>
         </div>
     );

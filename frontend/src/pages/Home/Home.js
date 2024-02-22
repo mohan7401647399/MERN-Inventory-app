@@ -20,14 +20,14 @@ const Home = () => {
                     </ShowOnLogout>
                     <ShowOnLogout>
                         <li>
-                            <button className="btn btn-primary  ms-3">
+                            <button className="btn btn-primary  ms-3  hover:font-bold">
                                 <Link to="/login" className='text-white m-2  text-decoration-none'>Login</Link>
                             </button>
                         </li>
                     </ShowOnLogout>
                     <ShowOnLogin>
                         <li>
-                            <button className="btn btn-primary ms-3">
+                            <button className="btn btn-primary ms-3  hover:font-bold">
                                 <Link to="/dashboard" className=' text-white m-2 text-decoration-none'>Dashboard</Link>
                             </button>
                         </li>
@@ -42,7 +42,7 @@ const Home = () => {
                         real timeand integrated to make it easier to develop your business.
                     </p>
                     <div>
-                        <div className="btn btn-body btn-outline-primary">
+                        <div className="btn btn-body btn-outline-primary  hover:font-bold">
                             <Link to="/dashboard" className='text-white text-decoration-none'>Free Trial 1 Month</Link>
                         </div>
                         <div className='d-flex mt-4'>

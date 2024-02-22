@@ -6,6 +6,7 @@ import InfoBox from '../../infoBox/InfoBox'
 import './ProductSummary.scss';
 import { useDispatch, useSelector } from "react-redux";
 import { CALC_STORE_VALUE, selectTotalStoreValue, CALC_OUT_OF_STOCK, selectOutOfStock, CALC_CATEGORY, selectCategory } from '../../../redux/features/product/productSlice';
+import { ChartJs } from '../../infoBox/ChartJs';
 
 // Icons
 const earningIcon = <AiFillDollarCircle size={40} color="#fff" />;
@@ -33,13 +34,14 @@ const ProductSummary = ({ products }) => {
 
     return (
         <div className="product-summary">
-            <h3>Inventory status</h3>
+            <h3 className='font-bold p-2 m-auto hover:font-black'>Inventory status</h3>
             <div className="info-summary">
                 <InfoBox icon={productIcon} title={"Total Products"} count={products.length} bgColor={"card1"} />
                 <InfoBox icon={earningIcon} title={"Total Store Value"} count={totalStoreValue.toFixed(2)} bgColor={"card2"} />
                 <InfoBox icon={outOfStockIcon} title={"Out of Stock"} count={outOfStock} bgColor={"card3"} />
                 <InfoBox icon={categoryIcon} title={"All Categories"} count={category.length} bgColor={"card4"} />
             </div>
+            <ChartJs products={products} />
         </div>
     );
 }

@@ -131,7 +131,7 @@ const EditProfile = () => {
               <input type="file" name="image" onChange={handleImageChange} className='form-control rounded-2 p-1 m-auto mt-2' />
             </p>
             <div>
-              <button className="btn btn-primary">Edit Profile</button>
+              <button className="btn btn-primary  hover:font-bold">Edit Profile</button>
             </div>
           </span>
         </form>
