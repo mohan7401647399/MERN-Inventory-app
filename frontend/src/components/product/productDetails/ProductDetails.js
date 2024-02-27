@@ -70,14 +70,13 @@ const ProductDetail = () => {
                             }}
                         ></div>
                         <hr />
-                        <code className="--color-dark">
-                            {/* Created on: {product.createdAt.toLocalString("en-US")} */}
-                            Created on: {product.createdAt}
+                        <code className="--color-dark">                            
+                            Created on: {product.createdAt.toLocaleString('en-GB', { timeZone: 'UTC' })}
+
                         </code>
                         <br />
-                        <code className="--color-dark">
-                            {/* Last Updated: {product.updatedAt.toLocalString("en-US")} */}
-                            Last Updated: {product.updatedAt}
+                        <code className="--color-dark"> 
+                            Last Updated: {product.updatedAt.toLocaleString('en-GB', { timeZone: 'UTC' })}
                         </code>
                     </div>
                 )}
