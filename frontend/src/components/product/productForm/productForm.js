@@ -8,7 +8,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
         <div className="add-product mb-20">
             <Card>
                 <form onSubmit={saveProduct}>
-                    <Card>
+                     <div className="card h-auto w-auto m-auto">
                         <label>Product Image</label>
                         <code className=" text-danger">
                             Supported Formats: jpg, jpeg, png
@@ -22,13 +22,13 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                         />
 
                         {imagePreview != null ? (
-                            <div className="image-preview">
+                            <div className="image-preview mt-2 p-2">
                                 <img src={imagePreview} alt="product" />
                             </div>
                         ) : (
                             <p className="text-warning">No image set for this poduct.</p>
                         )}
-                    </Card>
+                    </div>
                     <label>Product Name:</label>
                     <input
                         required
