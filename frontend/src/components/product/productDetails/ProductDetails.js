@@ -40,7 +40,7 @@ const ProductDetail = () => {
     return (
         <div className="product-detail">
             <h3 className="mt">Product Detail</h3>
-            <Card cardClass="card">
+             <div className="card w-100 h-100 m-auto">
                 {isLoading && <SpinnerImg />}
                 {product && (
                     <div className="detail">
@@ -80,7 +80,7 @@ const ProductDetail = () => {
                         </code>
                     </div>
                 )}
-            </Card>
+            </div>
         </div>
     );
 };
