@@ -14,7 +14,6 @@ export const createProduct = createAsyncThunk(
             return await productService.createNewProduct(formData)
         } catch (error) {
             const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
-            console.log(message);
             return thunAPI.rejectWithValue(message)
         }
     }
@@ -28,7 +27,6 @@ export const getProducts = createAsyncThunk(
             return await productService.getProducts()
         } catch (error) {
             const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
-            console.log(message);
             return thunAPI.rejectWithValue(message)
         }
     }
@@ -42,7 +40,6 @@ export const deleteProduct = createAsyncThunk(
             return await productService.deleteProduct(id)
         } catch (error) {
             const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
-            console.log(message);
             return thunAPI.rejectWithValue(message)
         }
     }
@@ -56,7 +53,6 @@ export const getProduct = createAsyncThunk(
             return await productService.getProduct(id)
         } catch (error) {
             const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
-            console.log(message);
             return thunAPI.rejectWithValue(message)
         }
     }
@@ -70,7 +66,6 @@ export const updateProduct = createAsyncThunk(
             return await productService.updateProduct(id, formData)
         } catch (error) {
             const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
-            console.log(message);
             return thunAPI.rejectWithValue(message)
         }
     }
@@ -127,7 +122,6 @@ const productSlice = createSlice({
                 state.isLoading = false;
                 state.isSuccess = true;
                 state.isError = false
-                console.log(action.payload);
                 state.products.push(action.payload)
                 toast.success("Product added successfully");
             })
@@ -144,7 +138,6 @@ const productSlice = createSlice({
                 state.isLoading = false
                 state.isSuccess = true
                 state.isError = false
-                console.log(action.payload);
                 state.products = action.payload
             })
             .addCase(getProducts.rejected, (state, action) => {

@@ -26,7 +26,6 @@ const Login = () => {
 
     const login = async (e) => {
         e.preventDefault()
-        console.log(formData);
         if (!email || !password) {
             return toast.error("All fields are required");
         }
@@ -37,7 +36,6 @@ const Login = () => {
         setIsLoading(true);
         try {
             const data = await loginUser(userData)
-            console.log(data);
             dispatch(SET_LOGIN(true))
             dispatch(SET_NAME(data.name))
             navigate('/dashboard')
