@@ -54,7 +54,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                     <label>Product Price:</label>
                     <input
                         required
-                        type="text"
+                        type="number"
                         placeholder="Product Price"
                         name="price"
                         value={product?.price}
@@ -65,7 +65,7 @@ const ProductForm = ({ product, productImage, imagePreview, description, setDesc
                     <label>Product Quantity:</label>
                     <input
                         required
-                        type="text"
+                        type="number"
                         placeholder="Product Quantity"
                         name="quantity"
                         value={product?.quantity}
