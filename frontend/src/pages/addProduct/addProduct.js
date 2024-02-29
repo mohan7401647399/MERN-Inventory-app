@@ -47,7 +47,7 @@ const AddProduct = () => {
         formData.append("description", description);
         formData.append("image", productImage);
         await dispatch(createProduct(formData));
-        navigate("/dashboard");
+        if (name && category && quantity && price && description) navigate("/dashboard");
     };
 
     return (
