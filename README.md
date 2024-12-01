@@ -49,3 +49,44 @@ Follow these steps to set up the project locally.
 1. Clone the repository:
    ```bash
    git clone https://github.com/mohan7401647399/MERN-Inventory-app.git
+
+2. Navigate to the project directory:
+   ```bash
+cd MERN-Inventory-app
+
+3. Install dependencies:
+   ```bash
+   For the server:
+    cd server
+    npm install
+   For the client:
+    cd client
+    npm install
+
+4. Configure environment variables:
+   ```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+
+5. Run the application:
+    Start the backend:
+        cd server
+        npm run dev
+    Start the frontend:
+        cd client
+        npm start
+        
+6. Open your browser and go to:
+    [text](http://localhost:3000)
+
+### Usage
+   ```bash
+    Registration and Login:
+    Create a user account and log in with secure credentials.
+    Manage Inventory:
+    Add new items, modify existing ones, and delete unwanted records.
+    Search and Filter:
+    Quickly find items by name or category.
+    Dashboard:
+    View inventory analytics and insights.
