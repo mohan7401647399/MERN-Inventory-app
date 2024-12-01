@@ -52,7 +52,7 @@ Follow these steps to set up the project locally.
 
 2. Navigate to the project directory:
    ```bash
-cd MERN-Inventory-app
+    cd MERN-Inventory-app
 
 3. Install dependencies:
    ```bash
@@ -65,9 +65,9 @@ cd MERN-Inventory-app
 
 4. Configure environment variables:
    ```bash
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+    PORT=5000
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_secret_key
 
 5. Run the application:
     Start the backend:
@@ -79,6 +79,8 @@ JWT_SECRET=your_secret_key
         
 6. Open your browser and go to:
     [text](http://localhost:3000)
+
+
 
 ### Usage
    ```bash
