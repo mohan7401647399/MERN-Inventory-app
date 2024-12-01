@@ -7,16 +7,16 @@ An inventory management application designed to efficiently handle and track sto
 
 ### Usage
 
-    Registration and Login:
+    **Registration and Login**:
         Create a user account and log in with secure credentials.
 
-    Manage Inventory:
+    **Manage Inventory**:
         Add new items, modify existing ones, and delete unwanted records.
 
-    Search and Filter:
+    **Search and Filter**:
         Quickly find items by name or category.
 
-    Dashboard:
+    **Dashboard**:
         View inventory analytics and insights.
 
 ## Features
