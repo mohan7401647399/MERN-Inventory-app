@@ -6,7 +6,7 @@ Deployed URL - https://inventorybillingapp-mern.netlify.app
 An inventory management application designed to efficiently handle and track stock details. This full-stack application is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and is tailored to provide seamless user experience for managing items and their details.
 
 ### Usage
-   ```bash
+
     Registration and Login:
         Create a user account and log in with secure credentials.
 
