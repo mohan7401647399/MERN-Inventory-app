@@ -30,7 +30,6 @@ An inventory management application designed to efficiently handle and track sto
 
 ## Live Demo
 
-*Include the link if you have deployed the project (e.g., Heroku, Vercel, Netlify):*  
 [[Live Demo]](https://inventorybillingapp-mern.netlify.app) (#)
 
 ## Technologies Used
