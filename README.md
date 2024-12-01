@@ -30,7 +30,7 @@ An inventory management application designed to efficiently handle and track sto
 
 ## Live Demo
 
-[[Live Demo]](https://inventorybillingapp-mern.netlify.app) (#)
+   https://inventorybillingapp-mern.netlify.app
 
 ## Technologies Used
 
