@@ -84,11 +84,14 @@ Follow these steps to set up the project locally.
 
 ### Usage
    ```bash
-    Registration and Login:
+       Registration and Login:
     Create a user account and log in with secure credentials.
+
     Manage Inventory:
     Add new items, modify existing ones, and delete unwanted records.
+
     Search and Filter:
     Quickly find items by name or category.
+    
     Dashboard:
     View inventory analytics and insights.
