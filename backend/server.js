@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ urlencoded: false }))
 app.use(bodyParser.json());
 // app.use(cors({ origin: ["http://localhost:3000"], credentials: true }));
-app.use(cors({ origin: "https://inventorybillingapp-mern.netlify.app", credentials: true }));
+app.use(cors({ origin: "https://mern-inventory-app-fgc6.onrender.com", credentials: true }));
 
 //Routes middleware
 app.use('/api/users', userRoute);
