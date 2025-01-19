@@ -15,9 +15,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         if (isLoggedIn) {
-            dispatch(getProducts()).unwrap().catch((err) => {
-                console.error("Failed to fetch products:", err);
-            });
+            dispatch(getProducts());
         }
         if (isError) {
             console.log("Error fetching products:", message);

@@ -1,45 +1,50 @@
-import axios from 'axios';
+import axios from "axios";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
+if (!BACKEND_URL) {
+    throw new Error("Backend URL is not defined. Check your .env file.");
+}
+
 const API_URL = `${BACKEND_URL}/api/products/`;
 
-//  Create a new product
-const createNewProduct = async (formData) => {
-    const response = await axios.post(API_URL, formData)
-    return response.data
-}
+// Ensure cookies are sent with requests
+axios.defaults.withCredentials = true;
 
-//  Get all product
-const getProducts = async () => {
-    const response = await axios.get(API_URL)
-    return response.data
-}
+// Utility for handling API errors
+const handleApiError = (error) => {
+    const message =
+        (error.response && error.response.data && error.response.data.message) ||
+        error.message ||
+        "An unknown error occurred.";
+    throw new Error(message);
+};
 
-//  Delete a product
-const deleteProduct = async (id) => {
-    const response = await axios.delete(API_URL + id)
-    return response.data
-}
+// Generalized API request function
+const apiRequest = async (method, url, data = null) => {
+    try {
+        const config = { method, url, data };
+        const response = await axios(config);
+        return response.data;
+    } catch (error) {
+        handleApiError(error);
+    }
+};
 
-//  Delete a product
-const getProduct = async (id) => {
-    const response = await axios.get(API_URL + id)
-    return response.data
-}
-
-//  Update product
-const updateProduct = async (id, formData) => {
-    const response = await axios.patch(`${API_URL}${id}`, formData)
-    return response.data
-}
+// CRUD Operations
+const createNewProduct = (formData) => apiRequest("POST", API_URL, formData);
+const getProducts = () => apiRequest("GET", API_URL);
+const deleteProduct = (id) => apiRequest("DELETE", `${API_URL}${id}`);
+const getProduct = (id) => apiRequest("GET", `${API_URL}${id}`);
+const updateProduct = (id, formData) =>
+    apiRequest("PATCH", `${API_URL}${id}`, formData);
 
 const productService = {
     createNewProduct,
     getProducts,
     deleteProduct,
     getProduct,
-    updateProduct
-}
+    updateProduct,
+};
 
-export default productService
+export default productService;

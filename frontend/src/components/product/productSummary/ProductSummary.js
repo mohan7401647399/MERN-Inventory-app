@@ -9,10 +9,10 @@ import { CALC_STORE_VALUE, selectTotalStoreValue, CALC_OUT_OF_STOCK, selectOutOf
 import { ChartJs } from '../../infoBox/ChartJs';
 
 // Icons
-const earningIcon = <AiFillDollarCircle size={40} color="#fff" />;
-const productIcon = <BsCart4 size={40} color="#fff" />;
-const categoryIcon = <BiCategory size={40} color="#fff" />;
-const outOfStockIcon = <BsCartX size={40} color="#fff" />;
+const earningIcon = <AiFillDollarCircle size={ 40 } color="#fff" />;
+const productIcon = <BsCart4 size={ 40 } color="#fff" />;
+const categoryIcon = <BiCategory size={ 40 } color="#fff" />;
+const outOfStockIcon = <BsCartX size={ 40 } color="#fff" />;
 
 // Format Amount
 export const formatNumbers = (x) => {
@@ -36,12 +36,12 @@ const ProductSummary = ({ products }) => {
         <div className="product-summary">
             <h3 className='font-bold p-2 m-auto hover:font-black'>Inventory status</h3>
             <div className="info-summary">
-                <InfoBox icon={productIcon} title={"Total Products"} count={products.length} bgColor={"card1"} />
-                <InfoBox icon={earningIcon} title={"Total Store Value"} count={totalStoreValue.toFixed(2)} bgColor={"card2"} />
-                <InfoBox icon={outOfStockIcon} title={"Out of Stock"} count={outOfStock} bgColor={"card3"} />
-                <InfoBox icon={categoryIcon} title={"All Categories"} count={category.length} bgColor={"card4"} />
+                <InfoBox icon={ productIcon } title={ "Total Products" } count={ products.length } bgColor={ "card1" } />
+                <InfoBox icon={ earningIcon } title={ "Total Store Value" } count={ totalStoreValue.toFixed(2) } bgColor={ "card2" } />
+                <InfoBox icon={ outOfStockIcon } title={ "Out of Stock" } count={ outOfStock } bgColor={ "card3" } />
+                <InfoBox icon={ categoryIcon } title={ "All Categories" } count={ category.length } bgColor={ "card4" } />
             </div>
-            <ChartJs products={products} />
+            <ChartJs products={ products } />
         </div>
     );
 }

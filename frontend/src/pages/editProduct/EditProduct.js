@@ -66,17 +66,17 @@ const EditProduct = () => {
 
   return (
     <div>
-      {isLoading && <Loader />}
+      { isLoading && <Loader /> }
       <h3 className="mt-1">Edit Product</h3>
       <ProductForm
-        product={product}
-        productImage={productImage}
-        imagePreview={imagePreview}
-        description={description}
-        setDescription={setDescription}
-        handleChange={handleChange}
-        handleImageChange={handleImageChange}
-        saveProduct={saveProduct}
+        product={ product }
+        productImage={ productImage }
+        imagePreview={ imagePreview }
+        description={ description }
+        setDescription={ setDescription }
+        handleChange={ handleChange }
+        handleImageChange={ handleImageChange }
+        saveProduct={ saveProduct }
       />
     </div>
   );
