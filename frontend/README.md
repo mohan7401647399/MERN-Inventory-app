@@ -1,70 +1,71 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Movie App
 
-## Available Scripts
+A feature-rich movie application built with React.js, utilizing the OMDB API for movie data. This project allows users to search for movies, view detailed information, and manage their favorite movies efficiently.
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+   - https://react-auth0-movies-app.netlify.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Movie Search**:
+  - Search for movies by title and view results instantly.
+- **Movie Details**:
+  - View detailed information about a selected movie, including title, year, genre, plot, and more.
+- **Favorites Management**:
+  - Add movies to a personal favorites list and manage them easily.
+- **Pagination**:
+  - Navigate through search results with user-friendly pagination.
+- **Error Handling**:
+  - Displays user-friendly messages for API errors or invalid inputs.
+- **Responsive Design**:
+  - Fully optimized for desktop, tablet, and mobile devices.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React.js**: For building the interactive and dynamic user interface.
+- **React Router**: For seamless navigation between pages.
+- **Axios**: For fetching data from the OMDB API.
+- **CSS/SCSS**: For styling and ensuring responsive design.
 
-### `npm run build`
+### API
+- **OMDB API**: Provides access to a rich database of movie information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### State Management
+- **React Hooks**: To manage state efficiently.
+- **Context API or Redux (optional)**: For advanced state management (if implemented).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Follow these steps to set up and run the project locally:
 
-### `npm run eject`
+### Prerequisites
+- Install [Node.js](https://nodejs.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/mohan7401647399/react-movie-app.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Navigate to the Login Signup directory**:
+   ```bash
+    cd react-movie-app
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Install dependencies**:
+   ```bash
+    npm install
 
-## Learn More
+4. **Configure environment variables: Create a .env file in the root directory and add your OMDB API key**:
+   ```bash
+    REACT_APP_OMDB_API_KEY=your_api_key
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Run the application**:
+   ```bash
+    npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. **Access the application: Open your browser and navigate to**:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - http://localhost:3000

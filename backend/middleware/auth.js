@@ -11,8 +11,10 @@ const protect = asyncHandler(async (req, res, next) => {
         }
         //  verify token
         const verifiedToken = jwt.verify(token, process.env.JWT_SECRET)
+        console.log(verifiedToken)
         //  get user id from the token
         const user = await User.findById(verifiedToken.id).select("-password");
+        console.log(user)
         if (!user) {
             res.status(401)
             throw new Error("User is not found")
