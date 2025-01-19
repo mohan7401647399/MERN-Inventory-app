@@ -1,7 +1,30 @@
+<<<<<<< HEAD
+=======
+Deployed URL - https://inventorybillingapp-mern.netlify.app
+
+
+>>>>>>> d5210be21f3a29c6b19dc1bc450152b4a52d277c
 # MERN Inventory App
 
 An inventory management application designed to efficiently handle and track stock details. This full-stack application is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and is tailored to provide seamless user experience for managing items and their details.
 
+<<<<<<< HEAD
+=======
+# Usage
+
+    **Registration and Login**:
+      Create a user account and log in with secure credentials.
+
+    **Manage Inventory**:
+      Add new items, modify existing ones, and delete unwanted records.
+
+    **Search and Filter**:
+       Quickly find items by name or category.
+
+    **Dashboard**:
+      View inventory analytics and insights.
+
+>>>>>>> d5210be21f3a29c6b19dc1bc450152b4a52d277c
 ## Features
 
 - **User Authentication**: Secure login and registration functionality with password encryption.
@@ -13,8 +36,12 @@ An inventory management application designed to efficiently handle and track sto
 
 ## Live Demo
 
+<<<<<<< HEAD
 *Include the link if you have deployed the project (e.g., Heroku, Vercel, Netlify):*  
 [Live Demo](#)
+=======
+   https://inventorybillingapp-mern.netlify.app
+>>>>>>> d5210be21f3a29c6b19dc1bc450152b4a52d277c
 
 ## Technologies Used
 
@@ -76,6 +103,7 @@ Follow these steps to set up the project locally.
         
 6. Open your browser and go to:
     [text](http://localhost:3000)
+<<<<<<< HEAD
 
 
 
@@ -92,3 +120,5 @@ Follow these steps to set up the project locally.
 
     Dashboard:
         View inventory analytics and insights.
+=======
+>>>>>>> d5210be21f3a29c6b19dc1bc450152b4a52d277c
