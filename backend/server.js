@@ -21,7 +21,8 @@ app.use(cors({
     credentials: true,
 }));
 app.use(express.urlencoded({ urlencoded: false }))
-app.use(cors({ origin: true, credentials: true }));
+app.use(cors({ origin: ["http://localhost:3000", "https://inventorybillingapp-mern.netlify.app"], credentials: true }));
+// app.use(cors({ origin: true, credentials: true }));
 // app.use(cors({ origin: ["http://localhost:3000"], credentials: true }));
 // app.use(cors({ origin: "https://inventorybillingapp-mern.netlify.app", credentials: true }));
 
