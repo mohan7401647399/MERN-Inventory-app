@@ -14,18 +14,20 @@ const Dashboard = () => {
     const { products, isLoading, isError, message } = useSelector((state) => state.product);
 
     useEffect(() => {
-        if (isLoggedIn === true) {
-            dispatch(getProducts())
+        if (isLoggedIn) {
+            dispatch(getProducts()).unwrap().catch((err) => {
+                console.error("Failed to fetch products:", err);
+            });
         }
         if (isError) {
-            console.log(message);
+            console.log("Error fetching products:", message);
         }
     }, [isLoggedIn, isError, message, dispatch])
 
     return (
         <div>
-            <ProductSummary products={products} />
-            <ProductList products={products} isLoading={isLoading} />
+            <ProductSummary products={ products } />
+            <ProductList products={ products } isLoading={ isLoading } />
         </div>
     );
 }
