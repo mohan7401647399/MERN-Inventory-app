@@ -14,19 +14,16 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
-<<<<<<< HEAD
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
     // origin: ["https://inventorybillingapp-mern.netlify.app"],
     origin: ["http://localhost:3000",],
     credentials: true,
 }));
-=======
 app.use(express.urlencoded({ urlencoded: false }))
-app.use(bodyParser.json());
+app.use(cors({ origin: true, credentials: true }));
 // app.use(cors({ origin: ["http://localhost:3000"], credentials: true }));
-app.use(cors({ origin: "https://inventorybillingapp-mern.netlify.app", credentials: true }));
->>>>>>> d5210be21f3a29c6b19dc1bc450152b4a52d277c
+// app.use(cors({ origin: "https://inventorybillingapp-mern.netlify.app", credentials: true }));
 
 // Routes Middleware
 app.use('/api/users', userRoute);
@@ -54,8 +51,4 @@ mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: tr
             console.log(`Server is Running on port ${PORT}`);
         });
     })
-<<<<<<< HEAD
     .catch((err) => console.log("Database connection failed:", err));
-=======
-}).catch((err) => console.log(err))
->>>>>>> d5210be21f3a29c6b19dc1bc450152b4a52d277c
